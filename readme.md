@@ -24,7 +24,7 @@ There are several variants of **WGS1984/EPSG:4326** spatial res sys in China.
 #### 1.1 GCJ-02
 
 The authority **DO NOT ALLOW** public maps directly use original lon/lat, data should be transformed into the so called **GCJ-02** coord sys.
-Too make things easy, you can think it a WGS 1984 coord sys with some *random* offset. Most web maps in China use the GCJ-02 coord sys, this had coused a lot of problems in the past. To make our application work well, it is suggested to use GCJ-02 in China. Of course we do not know the precise formula of the *random* offset, but people had struggled for years and got an approximation of it (https://blog.genglinxiao.com/中国地图坐标偏移算法破解小史/). Here the code in this repo is an pl/pgsql implementation for postgis.
+Too make things easy, you can think it as a WGS 1984 coord sys with some *random* offset. Most web maps in China use the GCJ-02 coord sys, this had coused a lot of problems in the past. To make our application work well, it is suggested to use GCJ-02 in China. Of course we do not know the precise formula of the *random* offset, but people had struggled for years and got an approximation of it (https://blog.genglinxiao.com/中国地图坐标偏移算法破解小史/). Here the code in this repo is an pl/pgsql implementation for postgis.
 
 If you need precise transformation, you can use the Web Service API of Tecent Map or AMap.
 
