@@ -24,7 +24,7 @@ There are several variants of **WGS1984/EPSG:4326** spatial res sys in China.
 #### 1.1 GCJ-02
 
 The authority **DO NOT ALLOW** public maps directly use original lon/lat, data should be transformed into the so called **GCJ-02** coord sys.
-Too make things easy, you can think it a WGS 1984 coord sys with some *random* offset. Most web maps in China use the GCJ-02 coord sys, this had caused a lot of problems in the past. To make our application work well, it is suggested to use GCJ-02 in China. Of course we do not know the precise formula of the *random* offset, but people had struggled for years and got an approximation of it (https://blog.genglinxiao.com/中国地图坐标偏移算法破解小史/). Here the code in this repo is an pl/pgsql implementation for postgis.
+To make things easy, you can think it as the WGS 1984 coord sys with some *random* offset. Most web maps in China use the GCJ-02 coord sys, this had caused a lot of problems in the past. To make our application work well, it is suggested to use GCJ-02 in China. Of course we do not know the precise formula of the *random* offset, but people had struggled for years and got an approximation of it (https://blog.genglinxiao.com/中国地图坐标偏移算法破解小史/). Here the code in this repo is an pl/pgsql implementation for postgis.
 
 If you need precise transformation, you can use the Web Service API of Tencent Map or AMap.
 
@@ -44,10 +44,3 @@ Precise or not, points are easy to be transformed between WGS 1984, GCJ-02 and B
 This a copyleft program. If necessary, it use the disclaimer of GPL (http://www.gnu.org/licenses/gpl.html) as its disclaimer.
 
     THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY APPLICABLE LAW. EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM “AS IS” WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM IS WITH YOU. SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF ALL NECESSARY SERVICING, REPAIR OR CORRECTION.
-
-
-
-
-
-
-
